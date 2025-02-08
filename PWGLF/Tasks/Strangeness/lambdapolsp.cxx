@@ -683,9 +683,9 @@ struct lambdapolsp {
         auto uxyQxyt = uxQxt + uyQyt;
         auto oddv1 = ux * (qxZDCA - qxZDCC) + uy * (qyZDCA - qyZDCC);
         auto evenv1 = ux * (qxZDCA + qxZDCC) + uy * (qyZDCA + qyZDCC);
-        auto v21 = TMath::Cos(2 * (GetPhiInRange(track.phi()) - psiZDCA - psiZDCC));
-        auto v22 = TMath::Cos(2 * (GetPhiInRange(track.phi()) + psiZDCA - psiZDCC));
-        auto v23 = TMath::Cos(2 * (GetPhiInRange(track.phi()) - psiZDC));
+        auto v21 = TMath::Cos(2 * (GetPhiInRange(track.phi() - psiZDCA - psiZDCC)));
+        auto v22 = TMath::Cos(2 * (GetPhiInRange(track.phi() + psiZDCA - psiZDCC)));
+        auto v23 = TMath::Cos(2 * (GetPhiInRange(track.phi() - psiZDC)));
 
         if (globalpt) {
           // if (sign > 0) {
