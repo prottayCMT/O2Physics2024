@@ -116,8 +116,8 @@ struct lambdapolsp {
   Configurable<double> cMinV0DCAPr{"cMinV0DCAPr", 0.05, "Minimum V0 daughters DCA to PV for Pr"};
   Configurable<double> cMinV0DCAPi{"cMinV0DCAPi", 0.05, "Minimum V0 daughters DCA to PV for Pi"};
   Configurable<float> cMaxV0LifeTime{"cMaxV0LifeTime", 20, "Maximum V0 life time"};
-  Configurable<bool> analyzeLambda{"analyzeLambda", true, "flag for lambda analysis"};
-  Configurable<bool> analyzeK0s{"analyzeK0s", false, "flag for K0s analysis"};
+  Configurable<bool> analyzeLambda{"analyzeLambda", false, "flag for lambda analysis"};
+  Configurable<bool> analyzeK0s{"analyzeK0s", true, "flag for K0s analysis"};
   Configurable<float> qtArmenterosMinForK0{"qtArmenterosMinForK0", 0.2, "Armenterous cut for K0s"};
 
   // config for V0 daughters
